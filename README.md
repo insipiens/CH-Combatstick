@@ -4,7 +4,7 @@
 
 * * *
 
-This project is the Arduino Pro Micro code to run a custom USN CH-CombatStick. 
+This project is for the Arduino Pro Micro code to run a custom USN CH-CombatStick with board revision 5.00 
 
 I wanted to add this stick to my Sidewinder FFB2 base, I initially referenced https://github.com/dlwalter/ch-joy version which helped me get started on this
 
