@@ -43,7 +43,9 @@ It works as a keypad matrix
 &nbsp;
 
 - Numbers indicate buttons, 1 is trigger - 
-- Letters: uppercase is Hat switch 1 (with circular knurling), Lower Case Hat switch 2 (NSWE knurling)
+Letters:
+- uppercase is Hat switch 1 (with circular knurling),
+- Lower Case is Hat switch 2 (NSWE knurling)
 
 &nbsp;
 
