@@ -16,13 +16,15 @@ I wanted to add this stick to my Sidewinder FFB2 base, I initially referenced ht
 
 However the board in this combatstick had different coloured wires, the board has a silk screen reference: 509-074B / REV 5.00
 
-![d23757f6ccf81ce8c94d027b9806b28b.png](file:///home/john/.config/joplin-desktop/resources/13c7114536ac4501b77cbb0dcd5ceab4.png)
+![image](https://github.com/insipiens/CH-Combatstick/assets/68975498/14469eb4-7892-4166-8cf9-bcb159d8a47d)
+
 
 &nbsp;
 
 The board has two sets of wire terminals, the 8 way terminal is to the MCU in the joystick base. Note to self, clean flux from board before sealing :o
 
-![5fbe903517a6a83406366a9daadebe6e.png](file:///home/john/.config/joplin-desktop/resources/97585b338ae6485986f462c9bc826f3a.png)
+![image](https://github.com/insipiens/CH-Combatstick/assets/68975498/41090bbc-6abc-475a-ba25-e13bc5c87872)
+
 
 &nbsp;
 
