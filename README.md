@@ -49,6 +49,11 @@ Letters:
 
 &nbsp;
 
-&nbsp;
+
+## Coding
+
+I used the keypad library, however I couldn't get it to work until I realised that the matrix above is actually inverted. I haven't altered the matrix accordingly but you will note in the code that the pins are differently assigned.
+
+
 
 &nbsp;
