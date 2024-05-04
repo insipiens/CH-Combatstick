@@ -31,13 +31,18 @@ The board has two sets of wire terminals, the 8 way terminal is to the MCU in th
 It works as a keypad matrix
 
 &nbsp;
-Pins		2	3	4	5
-	Wire Colours	Orange	White	Grey	Purple
-6	Green	1	2	3	4
-7	Red	N	E	S	W
-8	Brown	n	e	s	w
-9	Blue	5	6		
-![image](https://github.com/insipiens/CH-Combatstick/assets/68975498/6b1d8ee2-b116-43d8-9308-d5229b0ca17f)
+&nbsp;
+
+|     |     |     |     |     |     |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Pins |     | 2   | 3   | 4   | 5   |
+|     | Wire Colours | Orange | White | Grey | Purple |
+| 6   | Green | 1   | 2   | 3   | 4   |
+| 7   | Red | N   | E   | S   | W   |
+| 8   | Brown | n   | e   | s   | w   |
+| 9   | Blue | 5   | 6   |     |     |
+
+&nbsp;
 
 
 &nbsp;
