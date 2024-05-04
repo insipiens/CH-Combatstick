@@ -51,7 +51,7 @@ It works as a keypad matrix
 Letters:
 - uppercase is Hat switch 1 (with circular knurling),
 - Lower Case is Hat switch 2 (NSWE knurling)
-
+- connected to Pins on Arduino Pro Micro
 &nbsp;
 
 
