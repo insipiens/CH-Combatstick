@@ -21,7 +21,8 @@ However the board in this combatstick had different coloured wires, the board ha
 
 &nbsp;
 
-The board has two sets of wire terminals, the 8 way terminal is to the MCU in the joystick base. Note to self, clean flux from board before sealing :o
+The board has two sets of wire terminals, the 8 way terminal is to the MCU in the joystick base. Note to self, clean flux from board before sealing ',:-)
+
 
 ![image](https://github.com/insipiens/CH-Combatstick/assets/68975498/41090bbc-6abc-475a-ba25-e13bc5c87872)
 
