@@ -4,9 +4,9 @@
 
 * * *
 
-This project is for the Arduino Pro Micro code to run a custom USN CH-CombatStick with board revision 5.00 
+This project is for the Arduino Pro Micro code to run a custom USB CH-CombatStick 568 grip with board revision 5.00 (in the grip) , so it can be mounted on a Sidewinder FFB2 base.
 
-I wanted to add this stick to my Sidewinder FFB2 base, I initially referenced https://github.com/dlwalter/ch-joy version which helped me get started on this
+I initially referenced https://github.com/dlwalter/ch-joy version which helped me get started on this
 
 &nbsp;
 
