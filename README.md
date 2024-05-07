@@ -60,6 +60,20 @@ Letters:
 
 I used the keypad library, however I couldn't get it to work until I realised that the matrix above is actually inverted. I haven't altered the matrix accordingly but you will note in the code that the pins are differently assigned.
 
-<to be added>
+So I ended with two keypad instances, the second to allow the Hat Switch 1 to be rendered as an 8 way hat just on pin 7.
+
+
+
+const byte ROWS2 = 4; //four rows
+const byte COLS2 = 1; //four columns
+//define the cymbols on the buttons of the keypads
+char hexaKeys2[ROWS][COLS2] = {
+  {'0'}, //N
+  {'1'}, //E
+  {'2'}, //S
+  {'3'} //W
+};
+byte rowPins2[ROWS] = {2, 3, 4, 5}; //connect to the row pinouts of the keypad
+byte colPins2[COLS2] = {7}; //connect to the column pinouts of the keypad
 
 &nbsp;
