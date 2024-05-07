@@ -17,10 +17,10 @@ const byte ROWS = 4; //four rows
 const byte COLS = 3; //four columns
 //define the cymbols on the buttons of the keypads
 char hexaKeys[ROWS][COLS] = {
-  {1,5,7},
-  {2,6,8},
-  {3,11,9},
-  {4,12,10}
+  {1,5,7},    // B1,B5,n
+  {2,6,8},    // B2,B6,e
+  {3,11,9},   // B3,,s   (11 & 12 are unused locations so just stick high values there)
+  {4,12,10}   //B4, ,w
 };
 byte rowPins[ROWS] = {2, 3, 4, 5}; //connect to the row pinouts of the keypad
 byte colPins[COLS] = {6, 9, 8}; //connect to the column pinouts of the keypad
@@ -34,10 +34,10 @@ const byte ROWS2 = 4; //four rows
 const byte COLS2 = 3; //four columns
 //define the cymbols on the buttons of the keypads
 char hexaKeys2[ROWS][COLS2] = {
-  {'0'},
-  {'1'},
-  {'2'},
-  {'3'}
+  {'0'},   //N
+  {'1'},   //E
+  {'2'},   //S
+  {'3'}    //W
 };
 byte rowPins2[ROWS] = {2, 3, 4, 5}; //connect to the row pinouts of the keypad
 byte colPins2[COLS2] = {7}; //connect to the column pinouts of the keypad
