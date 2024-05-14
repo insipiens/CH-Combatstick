@@ -1,15 +1,15 @@
-
 #include <Keypad.h>
 #include <Joystick.h>
+
 
 const byte ROWS = 4; //four rows
 const byte COLS = 3; //four columns
 //define the cymbols on the buttons of the keypads
 char hexaKeys[ROWS][COLS] = {
-  {1,5,7},    // B1,B5,n
-  {2,6,8},    // B2,B6,e
-  {3,11,9},   // B3,,s   (11 & 12 are unused locations so just stick high values there)
-  {4,12,10}   //B4, ,w
+  {'0','4','6'},    // B1,B5,n
+  {'1','5','7'},    // B2,B6,e
+  {'2','11','8'},   // B3,,s   (11 & 12 are unused locations so just stick high values there)
+  {'3','12','9'}   //B4, ,w
 };
 byte rowPins[ROWS] = {2, 3, 4, 5}; //connect to the row pinouts of the keypad
 byte colPins[COLS] = {6, 9, 8}; //connect to the column pinouts of the keypad
@@ -20,7 +20,7 @@ Keypad customKeypad = Keypad( makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS
 
 
 const byte ROWS2 = 4; //four rows
-const byte COLS2 = 3; //four columns
+const byte COLS2 = 1; //four columns
 //define the cymbols on the buttons of the keypads
 char hexaKeys2[ROWS][COLS2] = {
   {'0'},   //N
@@ -51,6 +51,8 @@ const bool initAutoSendState = true;
 
 void setup(){
   Serial.begin(9600);
+  customKeypad.setDebounceTime(20);
+  customKeypad.setHoldTime(200);
   Joystick.begin();
   for(int i=0;i<10;i++){
     Joystick.setButton(i,0);
@@ -69,12 +71,31 @@ void loop() {
 
 void CheckAllButtons(void) {
   if (customKeypad.getKeys()) {
-    for (int i = 0; i < 12; i++) {
-      if (customKeypad.key[i].stateChanged) {
+    for (int i = 0; i < 10; i++) {
+      if (customKeypad.key[i].stateChanged ){ //&& (customKeypad.key[i].kstate == PRESSED || customKeypad.key[i].kstate == HOLD)) {
         
 
+
+                switch (customKeypad.key[i].kstate) {  // Report active key state : IDLE, PRESSED, HOLD, or RELEASED
+                    case PRESSED:
+                    Joystick.setButton(customKeypad.key[i].kchar- '0', 1);
+                break;
+                    case HOLD:
+                    Joystick.setButton(customKeypad.key[i].kchar- '0', 1);
+                break;
+                    case RELEASED:
+                    Joystick.setButton(customKeypad.key[i].kchar- '0', 0);
+                break;
+//                    case IDLE:
+//                    int c = 0;   Joystick.setButton(customKeypad.key[i].kchar- '0', 0);
+                }
+
+
           //int buttonIndex = rowIndex * 3 + colIndex;
-        Joystick.setButton(customKeypad.key[i].kchar-1, customKeypad.key[i].kstate == PRESSED || customKeypad.key[i].kstate == HOLD);
+//        Joystick.setButton(customKeypad.key[i].kchar- '0', customKeypad.key[i].kstate == PRESSED  || customKeypad.key[i].kstate == HOLD);
+//        Serial.print(customKeypad.key[i].kstate);
+//        Serial.print(" > ");
+//        Serial.println(customKeypad.key[i].kchar);
       }
     }
   }
@@ -118,3 +139,6 @@ void CheckHatSwitch() {
     Joystick.setHatSwitch(0, hatPosition);
 //    delay(50);
 }
+
+
+
